@@ -1,0 +1,273 @@
+<?xml version="1.0"?>
+<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://www.w3.org/2001/12/soap-envelope" SOAP-ENV:encodingStyle="http://www.w3.org/2001/12/soap-encoding" >
+	<SOAP-ENV:Body xmlns:lle="http://www.xyz.org/lifelogevents" >
+	<lle:Event>
+		<lle:eventid>ID1</lle:eventid>
+		<lle:tweet>
+			<lle:text>I saw a cat today</lle:text>
+			<lle:location>
+				<lle:lat>31.9505</lle:lat>
+				<lle:long>115.8605</lle:long>
+			</lle:location>
+			<lle:datetimestamp>datetimestamp</lle:datetimestamp>
+		</lle:tweet>
+	</lle:Event>
+	<lle:Event>
+		<lle:eventid>ID2</lle:eventid>
+		<lle:facebook-status-update>
+			<lle:text>Facebook destroys people!</lle:text>
+			<lle:location>
+				<lle:lat>32.0569</lle:lat>
+				<lle:long>115.7439</lle:long>
+			</lle:location>
+			<lle:datetimestamp>datetimestamp</lle:datetimestamp>
+		</lle:facebook-status-update>
+	</lle:Event>
+	<lle:Event>
+		<lle:eventid>ID3</lle:eventid>
+		<lle:photo>
+			<lle:filepath>/photos/image.jpg</lle:filepath>
+			<lle:location>
+				<lle:lat>33.0569</lle:lat>
+				<lle:long>115.9405</lle:long>
+			</lle:location>
+		</lle:photo>
+	</lle:Event>
+	<lle:Event>
+		<lle:eventid>ID4</lle:eventid>
+		<lle:video>
+			<lle:filepath>/videos/film.mp4</lle:filepath>
+			<lle:location>
+				<lle:lat>34.9584</lle:lat>
+				<lle:long>114.1568</lle:long>
+			</lle:location>
+			<lle:start-time>
+				<lle:datetimestamp>datetimestamp</lle:datetimestamp>
+			</lle:start-time>
+			<lle:end-time>
+				<lle:datetimestamp>datetimestamp</lle:datetimestamp>
+			</lle:end-time>
+		</lle:video>
+	</lle:Event>
+		<lle:Event>
+		<lle:eventid>ID5</lle:eventid>
+		<lle:tweet>
+			<lle:text>This is some tweet in my day</lle:text>
+			<lle:location>
+				<lle:lat>30.5146</lle:lat>
+				<lle:long>115.5184</lle:long>
+			</lle:location>
+			<lle:datetimestamp>datetimestamp</lle:datetimestamp>
+		</lle:tweet>
+	</lle:Event>
+		<lle:Event>
+		<lle:eventid>ID6</lle:eventid>
+		<lle:tweet>
+			<lle:text>This is some tweet in my day</lle:text>
+			<lle:location>
+				<lle:lat>31.6892</lle:lat>
+				<lle:long>115.1235</lle:long>
+			</lle:location>
+			<lle:datetimestamp>datetimestamp</lle:datetimestamp>
+		</lle:tweet>
+	</lle:Event>
+		<lle:Event>
+		<lle:eventid>ID7</lle:eventid>
+		<lle:tweet>
+			<lle:text>This is some tweet in my day</lle:text>
+			<lle:location>
+				<lle:lat>31.9505</lle:lat>
+				<lle:long>115.8605</lle:long>
+			</lle:location>
+			<lle:datetimestamp>datetimestamp</lle:datetimestamp>
+		</lle:tweet>
+	</lle:Event>
+		<lle:Event>
+		<lle:eventid>ID8</lle:eventid>
+		<lle:tweet>
+			<lle:text>This is some tweet in my day</lle:text>
+			<lle:location>
+				<lle:lat>31.9505</lle:lat>
+				<lle:long>115.8605</lle:long>
+			</lle:location>
+			<lle:datetimestamp>datetimestamp</lle:datetimestamp>
+		</lle:tweet>
+	</lle:Event>
+		<lle:Event>
+		<lle:eventid>ID9</lle:eventid>
+		<lle:tweet>
+			<lle:text>This is some tweet in my day</lle:text>
+			<lle:location>
+				<lle:lat>31.9505</lle:lat>
+				<lle:long>115.8605</lle:long>
+			</lle:location>
+			<lle:datetimestamp>datetimestamp</lle:datetimestamp>
+		</lle:tweet>
+	</lle:Event>
+		<lle:Event>
+		<lle:eventid>ID10</lle:eventid>
+		<lle:tweet>
+			<lle:text>This is some tweet in my day</lle:text>
+			<lle:location>
+				<lle:lat>31.9505</lle:lat>
+				<lle:long>115.8605</lle:long>
+			</lle:location>
+			<lle:datetimestamp>datetimestamp</lle:datetimestamp>
+		</lle:tweet>
+	</lle:Event>
+		<lle:Event>
+		<lle:eventid>ID11</lle:eventid>
+		<lle:tweet>
+			<lle:text>This is some tweet in my day</lle:text>
+			<lle:location>
+				<lle:lat>31.9505</lle:lat>
+				<lle:long>115.8605</lle:long>
+			</lle:location>
+			<lle:datetimestamp>datetimestamp</lle:datetimestamp>
+		</lle:tweet>
+	</lle:Event>
+		<lle:Event>
+		<lle:eventid>ID12</lle:eventid>
+		<lle:tweet>
+			<lle:text>This is some tweet in my day</lle:text>
+			<lle:location>
+				<lle:lat>31.9505</lle:lat>
+				<lle:long>115.8605</lle:long>
+			</lle:location>
+			<lle:datetimestamp>datetimestamp</lle:datetimestamp>
+		</lle:tweet>
+	</lle:Event>
+		<lle:Event>
+		<lle:eventid>ID13</lle:eventid>
+		<lle:tweet>
+			<lle:text>This is some tweet in my day</lle:text>
+			<lle:location>
+				<lle:lat>31.9505</lle:lat>
+				<lle:long>115.8605</lle:long>
+			</lle:location>
+			<lle:datetimestamp>datetimestamp</lle:datetimestamp>
+		</lle:tweet>
+	</lle:Event>
+		<lle:Event>
+		<lle:eventid>ID14</lle:eventid>
+		<lle:tweet>
+			<lle:text>This is some tweet in my day</lle:text>
+			<lle:location>
+				<lle:lat>31.9505</lle:lat>
+				<lle:long>115.8605</lle:long>
+			</lle:location>
+			<lle:datetimestamp>datetimestamp</lle:datetimestamp>
+		</lle:tweet>
+	</lle:Event>
+		<lle:Event>
+		<lle:eventid>ID15</lle:eventid>
+		<lle:tweet>
+			<lle:text>This is some tweet in my day</lle:text>
+			<lle:location>
+				<lle:lat>31.9505</lle:lat>
+				<lle:long>115.8605</lle:long>
+			</lle:location>
+			<lle:datetimestamp>datetimestamp</lle:datetimestamp>
+		</lle:tweet>
+	</lle:Event>
+		<lle:Event>
+		<lle:eventid>ID16</lle:eventid>
+		<lle:tweet>
+			<lle:text>This is some tweet in my day</lle:text>
+			<lle:location>
+				<lle:lat>31.9505</lle:lat>
+				<lle:long>115.8605</lle:long>
+			</lle:location>
+			<lle:datetimestamp>datetimestamp</lle:datetimestamp>
+		</lle:tweet>
+	</lle:Event>
+		<lle:Event>
+		<lle:eventid>ID17</lle:eventid>
+		<lle:tweet>
+			<lle:text>This is some tweet in my day</lle:text>
+			<lle:location>
+				<lle:lat>31.9505</lle:lat>
+				<lle:long>115.8605</lle:long>
+			</lle:location>
+			<lle:datetimestamp>datetimestamp</lle:datetimestamp>
+		</lle:tweet>
+	</lle:Event>
+		<lle:Event>
+		<lle:eventid>ID18</lle:eventid>
+		<lle:tweet>
+			<lle:text>This is some tweet in my day</lle:text>
+			<lle:location>
+				<lle:lat>31.9505</lle:lat>
+				<lle:long>115.8605</lle:long>
+			</lle:location>
+			<lle:datetimestamp>datetimestamp</lle:datetimestamp>
+		</lle:tweet>
+	</lle:Event>
+		<lle:Event>
+		<lle:eventid>ID19</lle:eventid>
+		<lle:tweet>
+			<lle:text>This is some tweet in my day</lle:text>
+			<lle:location>
+				<lle:lat>31.9505</lle:lat>
+				<lle:long>115.8605</lle:long>
+			</lle:location>
+			<lle:datetimestamp>datetimestamp</lle:datetimestamp>
+		</lle:tweet>
+	</lle:Event>
+		<lle:Event>
+		<lle:eventid>ID20</lle:eventid>
+		<lle:tweet>
+			<lle:text>This is some tweet in my day</lle:text>
+			<lle:location>
+				<lle:lat>31.9505</lle:lat>
+				<lle:long>115.8605</lle:long>
+			</lle:location>
+			<lle:datetimestamp>datetimestamp</lle:datetimestamp>
+		</lle:tweet>
+	</lle:Event>
+		<lle:Event>
+		<lle:eventid>ID21</lle:eventid>
+		<lle:tweet>
+			<lle:text>This is some tweet in my day</lle:text>
+			<lle:location>
+				<lle:lat>31.9505</lle:lat>
+				<lle:long>115.8605</lle:long>
+			</lle:location>
+			<lle:datetimestamp>datetimestamp</lle:datetimestamp>
+		</lle:tweet>
+	</lle:Event>
+		<lle:Event>
+		<lle:eventid>ID22</lle:eventid>
+		<lle:tweet>
+			<lle:text>This is some tweet in my day</lle:text>
+			<lle:location>
+				<lle:lat>31.9505</lle:lat>
+				<lle:long>115.8605</lle:long>
+			</lle:location>
+			<lle:datetimestamp>datetimestamp</lle:datetimestamp>
+		</lle:tweet>
+	</lle:Event>
+		<lle:Event>
+		<lle:eventid>ID23</lle:eventid>
+		<lle:tweet>
+			<lle:text>This is some tweet in my day</lle:text>
+			<lle:location>
+				<lle:lat>31.9505</lle:lat>
+				<lle:long>115.8605</lle:long>
+			</lle:location>
+			<lle:datetimestamp>datetimestamp</lle:datetimestamp>
+		</lle:tweet>
+	</lle:Event>
+		<lle:Event>
+		<lle:eventid>ID24</lle:eventid>
+		<lle:tweet>
+			<lle:text>This is some tweet in my day</lle:text>
+			<lle:location>
+				<lle:lat>31.9505</lle:lat>
+				<lle:long>115.8605</lle:long>
+			</lle:location>
+			<lle:datetimestamp>datetimestamp</lle:datetimestamp>
+		</lle:tweet>
+	</lle:Event>
+</SOAP-ENV:Body>
+</SOAP-ENV:Envelope>

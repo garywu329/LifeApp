@@ -1,5 +1,4 @@
 H:\Visual Studios\Projects\LifeApp\LifeApp\LifeApp\obj\Debug\LifeApp.csprojAssemblyReference.cache
-H:\Visual Studios\Projects\LifeApp\LifeApp\LifeApp\obj\Debug\LifeApp.Form1.resources
 H:\Visual Studios\Projects\LifeApp\LifeApp\LifeApp\obj\Debug\LifeApp.Properties.Resources.resources
 H:\Visual Studios\Projects\LifeApp\LifeApp\LifeApp\obj\Debug\LifeApp.csproj.GenerateResource.cache
 H:\Visual Studios\Projects\LifeApp\LifeApp\LifeApp\obj\Debug\LifeApp.csproj.CoreCompileInputs.cache
@@ -23,3 +22,11 @@ H:\Visual Studios\Projects\LifeApp\LifeApp\LifeApp\bin\Debug\Newtonsoft.Json.xml
 H:\Visual Studios\Projects\LifeApp\LifeApp\LifeApp\bin\Debug\System.Data.SQLite.xml
 H:\Visual Studios\Projects\LifeApp\LifeApp\LifeApp\bin\Debug\System.Data.SQLite.dll.config
 H:\Visual Studios\Projects\LifeApp\LifeApp\LifeApp\obj\Debug\LifeApp.csproj.CopyComplete
+H:\Visual Studios\Projects\LifeApp\LifeApp\LifeApp\obj\Debug\LifeApp.Map_Form.resources
+H:\Visual Studios\Projects\LifeApp\LifeApp\LifeApp\bin\Debug\Interop.WMPLib.dll
+H:\Visual Studios\Projects\LifeApp\LifeApp\LifeApp\bin\Debug\AxInterop.WMPLib.dll
+H:\Visual Studios\Projects\LifeApp\LifeApp\LifeApp\obj\Debug\Interop.WMPLib.dll
+H:\Visual Studios\Projects\LifeApp\LifeApp\LifeApp\obj\Debug\AxInterop.WMPLib.dll
+H:\Visual Studios\Projects\LifeApp\LifeApp\LifeApp\obj\Debug\LifeApp.csproj.ResolveComReference.cache
+H:\Visual Studios\Projects\LifeApp\LifeApp\LifeApp\obj\Debug\LifeApp.AddForm.resources
+H:\Visual Studios\Projects\LifeApp\LifeApp\LifeApp\obj\Debug\LifeApp.EventForm.resources

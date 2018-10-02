@@ -37,8 +37,8 @@
             this.Longitude = new System.Windows.Forms.Label();
             this.Description_label = new System.Windows.Forms.Label();
             this.Description = new System.Windows.Forms.RichTextBox();
-            this.datestamp = new System.Windows.Forms.DateTimePicker();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.Time = new System.Windows.Forms.DateTimePicker();
+            this.Date = new System.Windows.Forms.DateTimePicker();
             this.Picture = new System.Windows.Forms.PictureBox();
             this.Video = new AxWMPLib.AxWindowsMediaPlayer();
             this.CloseEvent = new System.Windows.Forms.Button();
@@ -112,25 +112,30 @@
             // 
             // Description
             // 
+            this.Description.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.Description.ForeColor = System.Drawing.SystemColors.WindowText;
             this.Description.Location = new System.Drawing.Point(12, 109);
             this.Description.Name = "Description";
             this.Description.Size = new System.Drawing.Size(198, 64);
             this.Description.TabIndex = 9;
             this.Description.Text = "";
+            this.Description.TextChanged += new System.EventHandler(this.Description_TextChanged);
             // 
-            // datestamp
+            // Time
             // 
-            this.datestamp.Location = new System.Drawing.Point(12, 65);
-            this.datestamp.Name = "datestamp";
-            this.datestamp.Size = new System.Drawing.Size(198, 20);
-            this.datestamp.TabIndex = 13;
+            this.Time.Location = new System.Drawing.Point(12, 65);
+            this.Time.Name = "Time";
+            this.Time.Size = new System.Drawing.Size(198, 20);
+            this.Time.TabIndex = 13;
+            this.Time.ValueChanged += new System.EventHandler(this.Time_ValueChanged);
             // 
-            // dateTimePicker1
+            // Date
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(12, 39);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(198, 20);
-            this.dateTimePicker1.TabIndex = 14;
+            this.Date.Location = new System.Drawing.Point(12, 39);
+            this.Date.Name = "Date";
+            this.Date.Size = new System.Drawing.Size(198, 20);
+            this.Date.TabIndex = 14;
+            this.Date.ValueChanged += new System.EventHandler(this.Date_ValueChanged);
             // 
             // Picture
             // 
@@ -141,6 +146,7 @@
             this.Picture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.Picture.TabIndex = 15;
             this.Picture.TabStop = false;
+            this.Picture.Click += new System.EventHandler(this.Picture_Click);
             // 
             // Video
             // 
@@ -169,8 +175,8 @@
             this.Controls.Add(this.CloseEvent);
             this.Controls.Add(this.Video);
             this.Controls.Add(this.Picture);
-            this.Controls.Add(this.dateTimePicker1);
-            this.Controls.Add(this.datestamp);
+            this.Controls.Add(this.Date);
+            this.Controls.Add(this.Time);
             this.Controls.Add(this.Description);
             this.Controls.Add(this.Description_label);
             this.Controls.Add(this.Longitude);
@@ -199,8 +205,8 @@
         private System.Windows.Forms.Label Longitude;
         private System.Windows.Forms.Label Description_label;
         private System.Windows.Forms.RichTextBox Description;
-        private System.Windows.Forms.DateTimePicker datestamp;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.DateTimePicker Time;
+        private System.Windows.Forms.DateTimePicker Date;
         private System.Windows.Forms.PictureBox Picture;
         private AxWMPLib.AxWindowsMediaPlayer Video;
         private System.Windows.Forms.Button CloseEvent;

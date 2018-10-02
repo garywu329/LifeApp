@@ -6,7 +6,7 @@
 		<lle:tweet>
 			<lle:text>I saw a cat today</lle:text>
 			<lle:location>
-				<lle:lat>31.9505</lle:lat>
+				<lle:lat>-31.9505</lle:lat>
 				<lle:long>115.8605</lle:long>
 			</lle:location>
 			<lle:datetimestamp>datetimestamp</lle:datetimestamp>
@@ -17,7 +17,7 @@
 		<lle:facebook-status-update>
 			<lle:text>Facebook destroys people!</lle:text>
 			<lle:location>
-				<lle:lat>32.0569</lle:lat>
+				<lle:lat>-32.0569</lle:lat>
 				<lle:long>115.7439</lle:long>
 			</lle:location>
 			<lle:datetimestamp>datetimestamp</lle:datetimestamp>
@@ -26,9 +26,9 @@
 	<lle:Event>
 		<lle:eventid>ID3</lle:eventid>
 		<lle:photo>
-			<lle:filepath>/photos/image.jpg</lle:filepath>
+			<lle:filepath>C:/image.jpg</lle:filepath>
 			<lle:location>
-				<lle:lat>33.0569</lle:lat>
+				<lle:lat>-33.0569</lle:lat>
 				<lle:long>115.9405</lle:long>
 			</lle:location>
 		</lle:photo>
@@ -36,9 +36,9 @@
 	<lle:Event>
 		<lle:eventid>ID4</lle:eventid>
 		<lle:video>
-			<lle:filepath>/videos/film.mp4</lle:filepath>
+			<lle:filepath>C:/film.mp4</lle:filepath>
 			<lle:location>
-				<lle:lat>34.9584</lle:lat>
+				<lle:lat>-34.9584</lle:lat>
 				<lle:long>114.1568</lle:long>
 			</lle:location>
 			<lle:start-time>
@@ -52,9 +52,9 @@
 		<lle:Event>
 		<lle:eventid>ID5</lle:eventid>
 		<lle:tweet>
-			<lle:text>This is some tweet in my day</lle:text>
+			<lle:text>Lately i've been hard to reach</lle:text>
 			<lle:location>
-				<lle:lat>30.5146</lle:lat>
+				<lle:lat>-30.5146</lle:lat>
 				<lle:long>115.5184</lle:long>
 			</lle:location>
 			<lle:datetimestamp>datetimestamp</lle:datetimestamp>
@@ -63,9 +63,9 @@
 		<lle:Event>
 		<lle:eventid>ID6</lle:eventid>
 		<lle:tweet>
-			<lle:text>This is some tweet in my day</lle:text>
+			<lle:text>I've been too long on my own</lle:text>
 			<lle:location>
-				<lle:lat>31.6892</lle:lat>
+				<lle:lat>-31.6892</lle:lat>
 				<lle:long>115.1235</lle:long>
 			</lle:location>
 			<lle:datetimestamp>datetimestamp</lle:datetimestamp>
@@ -74,9 +74,9 @@
 		<lle:Event>
 		<lle:eventid>ID7</lle:eventid>
 		<lle:tweet>
-			<lle:text>This is some tweet in my day</lle:text>
+			<lle:text>Everybody has a private world that they can be alone</lle:text>
 			<lle:location>
-				<lle:lat>31.9505</lle:lat>
+				<lle:lat>-31.5468</lle:lat>
 				<lle:long>115.8605</lle:long>
 			</lle:location>
 			<lle:datetimestamp>datetimestamp</lle:datetimestamp>
@@ -85,10 +85,10 @@
 		<lle:Event>
 		<lle:eventid>ID8</lle:eventid>
 		<lle:tweet>
-			<lle:text>This is some tweet in my day</lle:text>
+			<lle:text>Are you calling me?</lle:text>
 			<lle:location>
-				<lle:lat>31.9505</lle:lat>
-				<lle:long>115.8605</lle:long>
+				<lle:lat>-31.2153</lle:lat>
+				<lle:long>115.8765</lle:long>
 			</lle:location>
 			<lle:datetimestamp>datetimestamp</lle:datetimestamp>
 		</lle:tweet>
@@ -96,10 +96,10 @@
 		<lle:Event>
 		<lle:eventid>ID9</lle:eventid>
 		<lle:tweet>
-			<lle:text>This is some tweet in my day</lle:text>
+			<lle:text>Are you trying to get through</lle:text>
 			<lle:location>
-				<lle:lat>31.9505</lle:lat>
-				<lle:long>115.8605</lle:long>
+				<lle:lat>-31.9521</lle:lat>
+				<lle:long>115.8778</lle:long>
 			</lle:location>
 			<lle:datetimestamp>datetimestamp</lle:datetimestamp>
 		</lle:tweet>
@@ -107,10 +107,10 @@
 		<lle:Event>
 		<lle:eventid>ID10</lle:eventid>
 		<lle:tweet>
-			<lle:text>This is some tweet in my day</lle:text>
+			<lle:text>Are you reaching out for me?</lle:text>
 			<lle:location>
-				<lle:lat>31.9505</lle:lat>
-				<lle:long>115.8605</lle:long>
+				<lle:lat>-31.1513</lle:lat>
+				<lle:long>115.8468</lle:long>
 			</lle:location>
 			<lle:datetimestamp>datetimestamp</lle:datetimestamp>
 		</lle:tweet>
@@ -118,10 +118,10 @@
 		<lle:Event>
 		<lle:eventid>ID11</lle:eventid>
 		<lle:tweet>
-			<lle:text>This is some tweet in my day</lle:text>
+			<lle:text>Like i'm reaching out for you...</lle:text>
 			<lle:location>
-				<lle:lat>31.9505</lle:lat>
-				<lle:long>115.8605</lle:long>
+				<lle:lat>-32.9505</lle:lat>
+				<lle:long>114.4568</lle:long>
 			</lle:location>
 			<lle:datetimestamp>datetimestamp</lle:datetimestamp>
 		</lle:tweet>
@@ -129,10 +129,10 @@
 		<lle:Event>
 		<lle:eventid>ID12</lle:eventid>
 		<lle:tweet>
-			<lle:text>This is some tweet in my day</lle:text>
+			<lle:text>I'm just so fucking depressed</lle:text>
 			<lle:location>
-				<lle:lat>31.9505</lle:lat>
-				<lle:long>115.8605</lle:long>
+				<lle:lat>-31.1535</lle:lat>
+				<lle:long>115.7852</lle:long>
 			</lle:location>
 			<lle:datetimestamp>datetimestamp</lle:datetimestamp>
 		</lle:tweet>
@@ -140,10 +140,10 @@
 		<lle:Event>
 		<lle:eventid>ID13</lle:eventid>
 		<lle:tweet>
-			<lle:text>This is some tweet in my day</lle:text>
+			<lle:text>I just can't seem to get out this slumpy</lle:text>
 			<lle:location>
-				<lle:lat>31.9505</lle:lat>
-				<lle:long>115.8605</lle:long>
+				<lle:lat>-31.3291</lle:lat>
+				<lle:long>115.1235</lle:long>
 			</lle:location>
 			<lle:datetimestamp>datetimestamp</lle:datetimestamp>
 		</lle:tweet>
@@ -151,10 +151,10 @@
 		<lle:Event>
 		<lle:eventid>ID14</lle:eventid>
 		<lle:tweet>
-			<lle:text>This is some tweet in my day</lle:text>
+			<lle:text>If I could just get over this hump</lle:text>
 			<lle:location>
-				<lle:lat>31.9505</lle:lat>
-				<lle:long>115.8605</lle:long>
+				<lle:lat>-31.7865</lle:lat>
+				<lle:long>115.4225</lle:long>
 			</lle:location>
 			<lle:datetimestamp>datetimestamp</lle:datetimestamp>
 		</lle:tweet>
@@ -162,10 +162,10 @@
 		<lle:Event>
 		<lle:eventid>ID15</lle:eventid>
 		<lle:tweet>
-			<lle:text>This is some tweet in my day</lle:text>
+			<lle:text>But I need somethin' to pull me out this dump</lle:text>
 			<lle:location>
-				<lle:lat>31.9505</lle:lat>
-				<lle:long>115.8605</lle:long>
+				<lle:lat>-33.5896</lle:lat>
+				<lle:long>114.1235</lle:long>
 			</lle:location>
 			<lle:datetimestamp>datetimestamp</lle:datetimestamp>
 		</lle:tweet>
@@ -173,10 +173,10 @@
 		<lle:Event>
 		<lle:eventid>ID16</lle:eventid>
 		<lle:tweet>
-			<lle:text>This is some tweet in my day</lle:text>
+			<lle:text>I took my bruises, took my lumps</lle:text>
 			<lle:location>
-				<lle:lat>31.9505</lle:lat>
-				<lle:long>115.8605</lle:long>
+				<lle:lat>-33.8505</lle:lat>
+				<lle:long>115.7655</lle:long>
 			</lle:location>
 			<lle:datetimestamp>datetimestamp</lle:datetimestamp>
 		</lle:tweet>
@@ -184,10 +184,10 @@
 		<lle:Event>
 		<lle:eventid>ID17</lle:eventid>
 		<lle:tweet>
-			<lle:text>This is some tweet in my day</lle:text>
+			<lle:text>Fell down and I got right back up</lle:text>
 			<lle:location>
-				<lle:lat>31.9505</lle:lat>
-				<lle:long>115.8605</lle:long>
+				<lle:lat>-31.1256</lle:lat>
+				<lle:long>115.7854</lle:long>
 			</lle:location>
 			<lle:datetimestamp>datetimestamp</lle:datetimestamp>
 		</lle:tweet>
@@ -195,10 +195,10 @@
 		<lle:Event>
 		<lle:eventid>ID18</lle:eventid>
 		<lle:tweet>
-			<lle:text>This is some tweet in my day</lle:text>
+			<lle:text>But I need that spark to get psyched back up</lle:text>
 			<lle:location>
-				<lle:lat>31.9505</lle:lat>
-				<lle:long>115.8605</lle:long>
+				<lle:lat>-31.9865</lle:lat>
+				<lle:long>115.7542</lle:long>
 			</lle:location>
 			<lle:datetimestamp>datetimestamp</lle:datetimestamp>
 		</lle:tweet>
@@ -206,10 +206,10 @@
 		<lle:Event>
 		<lle:eventid>ID19</lle:eventid>
 		<lle:tweet>
-			<lle:text>This is some tweet in my day</lle:text>
+			<lle:text>In order for me to pick the mic back up</lle:text>
 			<lle:location>
-				<lle:lat>31.9505</lle:lat>
-				<lle:long>115.8605</lle:long>
+				<lle:lat>-31.7865</lle:lat>
+				<lle:long>115.7777</lle:long>
 			</lle:location>
 			<lle:datetimestamp>datetimestamp</lle:datetimestamp>
 		</lle:tweet>
@@ -217,10 +217,10 @@
 		<lle:Event>
 		<lle:eventid>ID20</lle:eventid>
 		<lle:tweet>
-			<lle:text>This is some tweet in my day</lle:text>
+			<lle:text>I don't know how or why or when</lle:text>
 			<lle:location>
-				<lle:lat>31.9505</lle:lat>
-				<lle:long>115.8605</lle:long>
+				<lle:lat>-31.6666</lle:lat>
+				<lle:long>115.9999</lle:long>
 			</lle:location>
 			<lle:datetimestamp>datetimestamp</lle:datetimestamp>
 		</lle:tweet>
@@ -228,10 +228,10 @@
 		<lle:Event>
 		<lle:eventid>ID21</lle:eventid>
 		<lle:tweet>
-			<lle:text>This is some tweet in my day</lle:text>
+			<lle:text>I ended up in this position i'm in</lle:text>
 			<lle:location>
-				<lle:lat>31.9505</lle:lat>
-				<lle:long>115.8605</lle:long>
+				<lle:lat>-31.8888</lle:lat>
+				<lle:long>115.4444</lle:long>
 			</lle:location>
 			<lle:datetimestamp>datetimestamp</lle:datetimestamp>
 		</lle:tweet>
@@ -239,10 +239,10 @@
 		<lle:Event>
 		<lle:eventid>ID22</lle:eventid>
 		<lle:tweet>
-			<lle:text>This is some tweet in my day</lle:text>
+			<lle:text>I'm starting to feel distant again</lle:text>
 			<lle:location>
-				<lle:lat>31.9505</lle:lat>
-				<lle:long>115.8605</lle:long>
+				<lle:lat>-31.3333</lle:lat>
+				<lle:long>115.2222</lle:long>
 			</lle:location>
 			<lle:datetimestamp>datetimestamp</lle:datetimestamp>
 		</lle:tweet>
@@ -250,10 +250,10 @@
 		<lle:Event>
 		<lle:eventid>ID23</lle:eventid>
 		<lle:tweet>
-			<lle:text>This is some tweet in my day</lle:text>
+			<lle:text>So I decided just to pick this pen</lle:text>
 			<lle:location>
-				<lle:lat>31.9505</lle:lat>
-				<lle:long>115.8605</lle:long>
+				<lle:lat>-31.1111</lle:lat>
+				<lle:long>115.1111</lle:long>
 			</lle:location>
 			<lle:datetimestamp>datetimestamp</lle:datetimestamp>
 		</lle:tweet>
@@ -261,10 +261,10 @@
 		<lle:Event>
 		<lle:eventid>ID24</lle:eventid>
 		<lle:tweet>
-			<lle:text>This is some tweet in my day</lle:text>
+			<lle:text>Up and try to make an attempt to vent</lle:text>
 			<lle:location>
-				<lle:lat>31.9505</lle:lat>
-				<lle:long>115.8605</lle:long>
+				<lle:lat>-31.1928</lle:lat>
+				<lle:long>115.4687</lle:long>
 			</lle:location>
 			<lle:datetimestamp>datetimestamp</lle:datetimestamp>
 		</lle:tweet>

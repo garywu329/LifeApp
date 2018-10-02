@@ -21,7 +21,6 @@ namespace LifeApp
         //Classes that the controller controls
         List<Event> EventList = new List<Event>();
         AddForm addform;
-        EventForm eventform = new EventForm();
         Map_Form maps;
         //Variables to be used to send information from each form
         private float lat, lng;
@@ -111,7 +110,7 @@ namespace LifeApp
             events = addform.ReturnEvent();
             AddEvent(events);
             addform.Hide();
-            maps.AddMarker(lat, lng);
+            maps.AddMarker(events);
         }
 
 
@@ -158,6 +157,10 @@ namespace LifeApp
             return length;
         }
 
+        public void RetrieveEvent(Event events)
+        {
+            EventForm eventform = new EventForm(events);
+        }
 
         private void FirstLoad()
         {
@@ -253,6 +256,7 @@ namespace LifeApp
                     }
                 }
                 AddEvent(iteevent);
+                maps.AddMarker(iteevent);
             }
 
         }

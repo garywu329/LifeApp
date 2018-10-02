@@ -23,7 +23,6 @@ namespace LifeApp
         private string videopath;
         private string picturepath;
         private int id;
-        private bool yesno = false;
         Controller control;
         
         public int Id
@@ -128,7 +127,6 @@ namespace LifeApp
             timestamp.ShowUpDown = true;
             timestamp.Value.ToString(time);
             this.control = control;
-            
         }
 
 
@@ -237,7 +235,11 @@ namespace LifeApp
 
         private void Picture_Click(object sender, EventArgs e)
         {
+            if(!string.IsNullOrWhiteSpace(Picture_filepath.Text))
+            {
 
+                Picture.Image = Image.FromFile(Picture_filepath.Text);
+            }
         }
 
         private void Picture_filepath_label_Click_1(object sender, EventArgs e)
@@ -257,7 +259,10 @@ namespace LifeApp
 
         private void Video_Enter(object sender, EventArgs e)
         {
-
+            if(!string.IsNullOrWhiteSpace(Video_filepath.Text))
+            {
+                Video.URL = Video_filepath.Text;
+            }
         }
     }
 }

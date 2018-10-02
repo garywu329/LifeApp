@@ -12,9 +12,24 @@ namespace LifeApp
 {
     public partial class EventForm : Form
     {
-        public EventForm()
+        public EventForm(Event events)
         {
             InitializeComponent();
+            EventID.Text = events.Eventid;
+            Longitude.Text = events.Longitude.ToString();
+            Latitude.Text = events.Latitude.ToString();
+
+            if(events.GetPicturePath() != null)
+            {
+                Picture.Image = Image.FromFile(events.GetPicturePath());
+            }
+            if(events.GetVideoPath() != null)
+            {
+                Video.URL = events.GetVideoPath();
+            }
+            Description.Text = events.Text;
+            Description.ReadOnly = true;
+            this.Show();
         }
 
         private void CloseEvent_Click(object sender, EventArgs e)
@@ -28,6 +43,26 @@ namespace LifeApp
         }
 
         private void Latitude_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Description_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Picture_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Date_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Time_ValueChanged(object sender, EventArgs e)
         {
 
         }

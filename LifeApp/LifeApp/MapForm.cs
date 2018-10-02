@@ -22,9 +22,8 @@ namespace LifeApp
         //Singleton implementation
         private static Map_Form aForm = null;
         //GMap stuff
-        GMapOverlay markersoverlay = new GMapOverlay("markers");
-        List<GMapMarker> markers = new List<GMapMarker>();
-
+        List<MarkerContainer> markers = new List<MarkerContainer>();
+        bool onmarker = false;
         Controller ctrl;
 
 
@@ -65,15 +64,17 @@ namespace LifeApp
             ctrl.AddForm();
         }
 
-        public void AddMarker(float lat, float lng)
+        public void AddMarker(Event markerevents)
         {
-            GMarkerGoogle addmarker = new GMarkerGoogle(
-                new PointLatLng(lat, lng),
-                GMarkerGoogleType.blue_pushpin);
+            GMapOverlay markersoverlay = new GMapOverlay(markerevents.Eventid);
+            MarkerContainer addmarker = new MarkerContainer(
+                new PointLatLng(markerevents.Latitude, markerevents.Longitude),
+                GMarkerGoogleType.blue_pushpin, markerevents.Eventid);
             markersoverlay.Markers.Add(addmarker);
             Map.Overlays.Add(markersoverlay);
             markers.Add(addmarker);
         }
+
 
         private void retrieve_button_Click(object sender, EventArgs e)
         {
@@ -94,48 +95,56 @@ namespace LifeApp
 
         private void Map_MouseClick(object sender, MouseEventArgs e)
         {
-            if(e.Button == MouseButtons.Left)
+            if (onmarker == false)
             {
-                //Gets lat/long for the map itself
-                x = (float)Map.FromLocalToLatLng(e.X, e.Y).Lat;
-                y = (float)Map.FromLocalToLatLng(e.X, e.Y).Lng;
+                if (e.Button == MouseButtons.Left)
+                {
+                    
+                    //Gets lat/long for the map itself
+                    x = (float)Map.FromLocalToLatLng(e.X, e.Y).Lat;
+                    y = (float)Map.FromLocalToLatLng(e.X, e.Y).Lng;
 
-                //Gets lat/long for the "camera"
-                int lat, lng;
-                lat = e.X;
-                lng = e.Y;
-                
-                popup_panel.Location = new Point(lat, lng);
-                if (popup_panel.Visible == false)
-                {
-                    popup_panel.Visible = true;
+                    //Gets lat/long for the "camera"
+                    int lat, lng;
+                    lat = e.X;
+                    lng = e.Y;
+
+                    popup_panel.Location = new Point(lat, lng);
+                    if (popup_panel.Visible == false)
+                    {
+                        popup_panel.Visible = true;
+                    }
+                    else
+                    {
+                        popup_panel.Visible = false;
+                    }
                 }
-                else
+
+                if (e.Button == MouseButtons.Right)
                 {
+                    //Gets lat/long for the map itself
+                    x = (float)Map.FromLocalToLatLng(e.X, e.Y).Lat;
+                    y = (float)Map.FromLocalToLatLng(e.X, e.Y).Lng;
+
+                    //Gets lat/long for the "camera"
+                    int lat, lng;
+                    lat = e.X;
+                    lng = e.Y;
                     popup_panel.Visible = false;
                 }
             }
-
-            if(e.Button == MouseButtons.Right)
-            {
-                //Gets lat/long for the map itself
-                x = (float)Map.FromLocalToLatLng(e.X, e.Y).Lat;
-                y = (float)Map.FromLocalToLatLng(e.X, e.Y).Lng;
-
-                //Gets lat/long for the "camera"
-                int lat, lng;
-                lat = e.X;
-                lng = e.Y;
-                popup_panel.Visible = false;
-            }
+           
         }
+
 
         private void Map_OnMarkerClick(GMapMarker item, MouseEventArgs e)
         {
-            if(e.Button == MouseButtons.Left)
-            {
-                AddForm form = new AddForm(ctrl);
-            }
+            Event events = new Event();
+            MarkerContainer newcontainer;
+            newcontainer = (MarkerContainer)item;
+            events = ctrl.FindEvent(newcontainer.Id);
+            ctrl.RetrieveEvent(events);
+            
         }
     }
 }

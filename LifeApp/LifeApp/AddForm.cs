@@ -186,6 +186,26 @@ namespace LifeApp
 
             events.Longitude = lat;
 
+            if(Source.SelectedIndex != -1)
+            {
+                if(Source.SelectedIndex == 0)
+                {
+                    events.Source = "tweet";
+                }
+                if (Source.SelectedIndex == 1)
+                {
+                    events.Source = "facebook-status-update";
+                }
+                if (Source.SelectedIndex == 2)
+                {
+                    events.Source = "photo";
+                }
+                if (Source.SelectedIndex == 3)
+                {
+                    events.Source = "video";
+                }
+            }
+
             return events;
         }
 
@@ -259,10 +279,12 @@ namespace LifeApp
 
         private void Video_Enter(object sender, EventArgs e)
         {
-            if(!string.IsNullOrWhiteSpace(Video_filepath.Text))
-            {
-                Video.URL = Video_filepath.Text;
-            }
+
+        }
+
+        private void Source_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

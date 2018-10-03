@@ -111,8 +111,23 @@ namespace LifeApp
             AddEvent(events);
             addform.Hide();
             maps.AddMarker(events);
+            AppendToXml(events);
         }
 
+        private void AppendToXml(Event events)
+        {
+            XElement xEle = XElement.Load(filepath);
+            xEle.Add(new XElement("Event",
+                new XElement("eventid", events.Eventid),
+                new XElement(events.Source,
+                    new XElement("text", events.Text),
+                    new XElement("location",
+                            new XElement("lat", events.Latitude),
+                            new XElement("long", events.Longitude),
+                    new XElement("datetimestamp", events.Datetimestamp)))));
+            xEle.Save(filepath);
+
+        }
 
         public Event FindEvent(string uniqueid)
         {

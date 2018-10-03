@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AddForm));
             this.Lat_Label = new System.Windows.Forms.Label();
             this.Long_Label = new System.Windows.Forms.Label();
             this.Close_Event_button = new System.Windows.Forms.Button();
@@ -45,11 +44,10 @@
             this.Picture = new System.Windows.Forms.PictureBox();
             this.Picture_filepath = new System.Windows.Forms.TextBox();
             this.Picture_filepath_label = new System.Windows.Forms.Label();
-            this.Video = new AxWMPLib.AxWindowsMediaPlayer();
             this.Video_filepath_label = new System.Windows.Forms.Label();
             this.Video_filepath = new System.Windows.Forms.TextBox();
+            this.Source = new System.Windows.Forms.ListBox();
             ((System.ComponentModel.ISupportInitialize)(this.Picture)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Video)).BeginInit();
             this.SuspendLayout();
             // 
             // Lat_Label
@@ -74,7 +72,7 @@
             // 
             // Close_Event_button
             // 
-            this.Close_Event_button.Location = new System.Drawing.Point(146, 521);
+            this.Close_Event_button.Location = new System.Drawing.Point(146, 368);
             this.Close_Event_button.Name = "Close_Event_button";
             this.Close_Event_button.Size = new System.Drawing.Size(75, 23);
             this.Close_Event_button.TabIndex = 2;
@@ -84,7 +82,7 @@
             // 
             // Add_Event_Button
             // 
-            this.Add_Event_Button.Location = new System.Drawing.Point(17, 521);
+            this.Add_Event_Button.Location = new System.Drawing.Point(8, 368);
             this.Add_Event_Button.Name = "Add_Event_Button";
             this.Add_Event_Button.Size = new System.Drawing.Size(75, 23);
             this.Add_Event_Button.TabIndex = 3;
@@ -151,7 +149,7 @@
             // datetimestamp_label
             // 
             this.datetimestamp_label.AutoSize = true;
-            this.datetimestamp_label.Location = new System.Drawing.Point(9, 67);
+            this.datetimestamp_label.Location = new System.Drawing.Point(7, 125);
             this.datetimestamp_label.Name = "datetimestamp_label";
             this.datetimestamp_label.Size = new System.Drawing.Size(85, 13);
             this.datetimestamp_label.TabIndex = 10;
@@ -159,7 +157,7 @@
             // 
             // datestamp
             // 
-            this.datestamp.Location = new System.Drawing.Point(12, 83);
+            this.datestamp.Location = new System.Drawing.Point(10, 141);
             this.datestamp.Name = "datestamp";
             this.datestamp.Size = new System.Drawing.Size(209, 20);
             this.datestamp.TabIndex = 12;
@@ -167,7 +165,7 @@
             // 
             // timestamp
             // 
-            this.timestamp.Location = new System.Drawing.Point(12, 109);
+            this.timestamp.Location = new System.Drawing.Point(10, 167);
             this.timestamp.Name = "timestamp";
             this.timestamp.Size = new System.Drawing.Size(209, 20);
             this.timestamp.TabIndex = 13;
@@ -176,7 +174,7 @@
             // Picture
             // 
             this.Picture.Image = global::LifeApp.Properties.Resources.Placeholder;
-            this.Picture.Location = new System.Drawing.Point(12, 182);
+            this.Picture.Location = new System.Drawing.Point(12, 232);
             this.Picture.Name = "Picture";
             this.Picture.Size = new System.Drawing.Size(209, 91);
             this.Picture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -186,7 +184,7 @@
             // 
             // Picture_filepath
             // 
-            this.Picture_filepath.Location = new System.Drawing.Point(12, 156);
+            this.Picture_filepath.Location = new System.Drawing.Point(12, 206);
             this.Picture_filepath.Name = "Picture_filepath";
             this.Picture_filepath.Size = new System.Drawing.Size(209, 20);
             this.Picture_filepath.TabIndex = 15;
@@ -195,27 +193,17 @@
             // Picture_filepath_label
             // 
             this.Picture_filepath_label.AutoSize = true;
-            this.Picture_filepath_label.Location = new System.Drawing.Point(9, 132);
+            this.Picture_filepath_label.Location = new System.Drawing.Point(7, 190);
             this.Picture_filepath_label.Name = "Picture_filepath_label";
             this.Picture_filepath_label.Size = new System.Drawing.Size(80, 13);
             this.Picture_filepath_label.TabIndex = 16;
             this.Picture_filepath_label.Text = "Picture Filepath";
             this.Picture_filepath_label.Click += new System.EventHandler(this.Picture_filepath_label_Click_1);
             // 
-            // Video
-            // 
-            this.Video.Enabled = true;
-            this.Video.Location = new System.Drawing.Point(12, 319);
-            this.Video.Name = "Video";
-            this.Video.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("Video.OcxState")));
-            this.Video.Size = new System.Drawing.Size(209, 183);
-            this.Video.TabIndex = 17;
-            this.Video.Enter += new System.EventHandler(this.Video_Enter);
-            // 
             // Video_filepath_label
             // 
             this.Video_filepath_label.AutoSize = true;
-            this.Video_filepath_label.Location = new System.Drawing.Point(12, 276);
+            this.Video_filepath_label.Location = new System.Drawing.Point(9, 326);
             this.Video_filepath_label.Name = "Video_filepath_label";
             this.Video_filepath_label.Size = new System.Drawing.Size(74, 13);
             this.Video_filepath_label.TabIndex = 18;
@@ -223,20 +211,34 @@
             // 
             // Video_filepath
             // 
-            this.Video_filepath.Location = new System.Drawing.Point(13, 293);
+            this.Video_filepath.Location = new System.Drawing.Point(10, 342);
             this.Video_filepath.Name = "Video_filepath";
             this.Video_filepath.Size = new System.Drawing.Size(208, 20);
             this.Video_filepath.TabIndex = 19;
             this.Video_filepath.TextChanged += new System.EventHandler(this.Video_filepath_TextChanged);
             // 
+            // Source
+            // 
+            this.Source.FormattingEnabled = true;
+            this.Source.Items.AddRange(new object[] {
+            "Tweet",
+            "Facebook Update",
+            "Photo",
+            "Video"});
+            this.Source.Location = new System.Drawing.Point(10, 66);
+            this.Source.Name = "Source";
+            this.Source.Size = new System.Drawing.Size(211, 56);
+            this.Source.TabIndex = 20;
+            this.Source.SelectedIndexChanged += new System.EventHandler(this.Source_SelectedIndexChanged);
+            // 
             // AddForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(231, 556);
+            this.ClientSize = new System.Drawing.Size(231, 397);
+            this.Controls.Add(this.Source);
             this.Controls.Add(this.Video_filepath);
             this.Controls.Add(this.Video_filepath_label);
-            this.Controls.Add(this.Video);
             this.Controls.Add(this.Picture_filepath_label);
             this.Controls.Add(this.Picture_filepath);
             this.Controls.Add(this.Picture);
@@ -257,7 +259,6 @@
             this.Text = "Add Event";
             this.Load += new System.EventHandler(this.InformationForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.Picture)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Video)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -281,8 +282,8 @@
         private System.Windows.Forms.PictureBox Picture;
         private System.Windows.Forms.TextBox Picture_filepath;
         private System.Windows.Forms.Label Picture_filepath_label;
-        private AxWMPLib.AxWindowsMediaPlayer Video;
         private System.Windows.Forms.Label Video_filepath_label;
         private System.Windows.Forms.TextBox Video_filepath;
+        private System.Windows.Forms.ListBox Source;
     }
 }

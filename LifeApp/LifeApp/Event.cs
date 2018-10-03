@@ -9,7 +9,7 @@ namespace LifeApp
     public class Event
     {
         private float longitude, latitude;
-        private string eventid, text, datetimestamp;
+        private string eventid, text, datetimestamp, source = "unknown event";
         private string[] filepathname = new string[2];
 
         public Event()
@@ -17,7 +17,7 @@ namespace LifeApp
             Console.WriteLine("Creating new Event");
         }
 
-        public Event(float longitude, float latitude, string eventid, string text, string datetimestamp, string filepathname)
+        public Event(float longitude, float latitude, string eventid, string text, string datetimestamp, string filepathname, string source)
         {
             int total;
             this.longitude = longitude;
@@ -27,9 +27,10 @@ namespace LifeApp
             this.datetimestamp = datetimestamp;
             total = filepathname.Count();
             this.filepathname[total] = filepathname;
+            this.source = source;
         }
 
-        public Event(float longitude, float latitude, string eventid, string text, string datetimestamp, string picturepathname, string videopathname)
+        public Event(float longitude, float latitude, string eventid, string text, string datetimestamp, string picturepathname, string videopathname, string source)
         {
             int total;
             this.longitude = longitude;
@@ -41,6 +42,7 @@ namespace LifeApp
             this.filepathname[total] = picturepathname;
             total = filepathname.Count();
             this.filepathname[total] = videopathname;
+            this.source = source;
         }
 
         public float Longitude
@@ -126,6 +128,18 @@ namespace LifeApp
         public string GetVideoPath()
         {
             return filepathname[1];
+        }
+
+        public string Source
+        {
+            get
+            {
+                return source;
+            }
+            set
+            {
+                source = value;
+            }
         }
     }
 }
